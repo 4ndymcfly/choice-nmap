@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Author: @4ndymcfly
-# Date:   27/11/2023
+# Date:   11/2023
 
 blueColor="\e[0;34m\033[1m"
 grayColor="\e[0;37m\033[1m"
