@@ -39,20 +39,20 @@ fileName=""
 
 case $option in
 	1)
-		sudo nmap -sS --top-ports 1000 --open --min-rate 5000 -n -Pn $ip -oG fastPorts > /dev/null
 		echo -e "\n${blueColor}[i] Starting the fast port scan...${endColor}"
+		sudo nmap -sS --top-ports 1000 --open --min-rate 5000 -n -Pn $ip -oG fastPorts > /dev/null
 		TTL=$(sudo ping -c 1 $ip | grep ttl | awk '{print $6}' | cut -d "=" -f2)  > /dev/null
 		fileName="fastPorts"
 		;;
 	2|3)
-		sudo nmap -sS -p- --open --min-rate 5000 -n -Pn $ip -oG allPorts > /dev/null
 		echo -e "\n${blueColor}[i] Starting the scan of all ports...${endColor}"
+		sudo nmap -sS -p- --open --min-rate 5000 -n -Pn $ip -oG allPorts > /dev/null
 		TTL=$(sudo ping -c 1 $ip | grep ttl | awk '{print $6}' | cut -d "=" -f2)  > /dev/null
 		fileName="allPorts"
 		;;
 	4)
-		sudo nmap -sU --open --min-rate 5000 -n -Pn $ip -oG allPortsUDP > /dev/null
 		echo -e "\n${blueColor}[i] Starting the UDP port scan...${endColor}"
+		sudo nmap -sU --open --min-rate 5000 -n -Pn $ip -oG allPortsUDP > /dev/null
 		TTL=$(sudo ping -c 1 $ip | grep ttl | awk '{print $6}' | cut -d "=" -f2)  > /dev/null
 		fileName="allPortsUDP"
 		;;
