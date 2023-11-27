@@ -1,4 +1,4 @@
-# CHOICE NMAP
+# Choice Nmap
 
 # CTF Scanning Tool
 
