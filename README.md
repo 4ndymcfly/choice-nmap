@@ -23,7 +23,7 @@ It's a little tool for network scanning and analysis, providing a user-friendly 
 
 2. **Navigate to the directory**: Use the command `cd choice-nmap` to navigate to the directory where the script is located.
 
-3. **Run the script**: Use the command `./choiceNmap.sh <target_IP>` to run the script. If permission is denied, you may need to make the script executable with the command `chmod +x ./choiceNmap.sh`.
+3. **Run the script**: Use the command `sudo ./choiceNmap.sh <target_IP>` to run the script (requires `sudo` for nmap features). If permission is denied, you may need to make the script executable with the command `chmod +x ./choiceNmap.sh`.
 
 4. **Select an option**: The script will present you with five options: a quick scan of the top 100 ports, a normal scan of all ports and services, an exhaustive scan that may take a long time, a scan of UDP ports, or exit the script. Enter the number of your selected option.
 
