@@ -19,9 +19,9 @@ It's a little tool for network scanning and analysis, providing a user-friendly 
 
 ## How to Use
 
-1. **Clone the repository**: First, clone this repository to your local machine using `git clone <repository_url>`.
+1. **Clone the repository**: First, clone this repository to your local machine using `git clone https://github.com/4ndymcfly/choice-nmap`.
 
-2. **Navigate to the directory**: Use the command `cd <directory_name>` to navigate to the directory where the script is located.
+2. **Navigate to the directory**: Use the command `cd choice-nmap` to navigate to the directory where the script is located.
 
 3. **Run the script**: Use the command `./choiceNmap.sh <target_IP>` to run the script. If permission is denied, you may need to make the script executable with the command `chmod +x ./choiceNmap.sh`.
 
