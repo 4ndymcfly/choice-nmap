@@ -95,7 +95,7 @@ case $option in
 	4)
 		echo -e "${blueColor}[i] Starting the vulnerability scan on the found UDP ports...${endColor}"
 		sudo nmap -sCV -O -p $open_ports --script vuln --version-all --reason --osscan-guess --traceroute $ip --stylesheet=https://raw.githubusercontent.com/honze-net/nmap-bootstrap-xsl/stable/nmap-bootstrap.xsl -oN targetedUDP -oX targetedUDP.xml > /dev/null
-		/usr/bin/cat ./targetUDP
+		/usr/bin/cat ./targetedUDP
   		exit 0
   		;;
 esac
